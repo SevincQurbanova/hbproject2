@@ -1,0 +1,4 @@
+# Project exclude paths
+/hb-01/target/
+/out/
+/target/
