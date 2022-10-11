@@ -15,7 +15,7 @@ public class Student {
     private String address;
     private String gender;
 
-    @OneToMany //(mappedBy = "student")
+    @ManyToMany (mappedBy = "studentList")
     private List<Course> courseList = new ArrayList<>();
 
     public Long getId() {

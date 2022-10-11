@@ -1,6 +1,8 @@
 package iktex.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Course {
@@ -14,7 +16,8 @@ public class Course {
     @ManyToOne
     private Instructor instructor;
 
-
+    @ManyToMany
+    private List<Student> studentList = new ArrayList<>();
 
 
     public Long getId() {
